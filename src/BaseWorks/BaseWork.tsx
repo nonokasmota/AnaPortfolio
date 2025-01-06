@@ -24,8 +24,8 @@ const BaseWork: React.FC<BaseWorkProps> = ({ Title, Text1, Text2, Text3, Image1,
   return (
     <>
     <div className='Back'>
-      <a href='/'>
-      <img src="/public/arrowtop.svg" className='BackIcon' alt="back" />
+      <a href='/AnaPortfolio/'>
+      <img src="arrowtop.svg" className='BackIcon' alt="back" />
       </a>
     </div>
     <div className="BodyTemplate">

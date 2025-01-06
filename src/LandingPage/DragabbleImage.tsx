@@ -6,11 +6,11 @@ const DraggableImage = () => {
   const [offset, setOffset] = useState({ x: 0, y: 0 });
   const [currentImageIndex, setCurrentImageIndex] = useState(0); // Do not remove currentImageIndex
   const imageArray = [
-    "/GraphicDesign/ErrarThumb.png",
-    "/GraphicDesign/MonofolhaThumb.png",
-    "/GraphicDesign/MurderThumb.png",
-    "/GraphicDesign/OpenThumb.png",
-    "/GraphicDesign/RewireThumb.png",
+    "GraphicDesign/ErrarThumb.png",
+    "GraphicDesign/MonofolhaThumb.png",
+    "GraphicDesign/MurderThumb.png",
+    "GraphicDesign/OpenThumb.png",
+    "GraphicDesign/RewireThumb.png",
   ];
   const preloadImages = (images: string[]) => {
     images.forEach((src) => {

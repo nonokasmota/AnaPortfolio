@@ -57,11 +57,11 @@ function PinterestBoard() {
 
         <div className="pinterest-board">
           {visibleGD && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/GD/OpenThumb.png" alt="Open Source folder" />
+            <img src="assets/GD/OpenThumb.png" alt="Open Source folder" />
           </div>}
           {visibleUI && <div className='boxes'>
-            <Link to="/Voof">
-              <img src="/src/PinterestBoard/assets/UI/VoofThumb.png" alt="Voof" />
+            <Link to="/AnaPortfolio/Voof">
+              <img src="assets/UI/VoofThumb.png" alt="Voof" />
               <div className="tags">
                 <p className="tag">&nbsp;Case Study&nbsp;</p>
                 <p className="tag">↗</p>
@@ -69,37 +69,37 @@ function PinterestBoard() {
             </Link>
           </div>}
           {visibleUI && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/UI/BridgeThumb.png" alt="Bridge app" />
+            <img src="assets/UI/BridgeThumb.png" alt="Bridge app" />
           </div>}
           {visibleUI && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/UI/GatherThumb.png" alt="Gather" />
+            <img src="assets/UI/GatherThumb.png" alt="Gather" />
           </div>}
           {visibleGD && <div className='boxes'>
-            <Link to="/Conflict">
-              <img src="/src/PinterestBoard/assets/GD/ConflictThumb.png" alt="Comflict of Interests" />
+            <Link to="/AnaPortfolio/Conflict">
+              <img src="assets/GD/ConflictThumb.png" alt="Comflict of Interests" />
               <div className="tags">
                 <p className="tag">↗</p>
               </div>
             </Link>
           </div>}
           {visiblePH && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/PH/BarcoThumb.png" alt="Boat" />
+            <img src="assets/PH/BarcoThumb.png" alt="Boat" />
           </div>}
           {visibleIL && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/IL/DecayThumb.png" alt="Decay" />
+            <img src="assets/IL/DecayThumb.png" alt="Decay" />
           </div>}
           {visiblePH && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/PH/VinhaThumb.png" alt="Countryside" />
+            <img src="assets/PH/VinhaThumb.png" alt="Countryside" />
           </div>}
           {visibleIL && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/IL/GummiesThumb.png" alt="Gummies" />
+            <img src="assets/IL/GummiesThumb.png" alt="Gummies" />
           </div>}
           {visibleGD && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/GD/RewireThumb.png" alt="Rewire" />
+            <img src="assets/GD/RewireThumb.png" alt="Rewire" />
           </div>}
           {visibleGD && <div className='boxes'>
-            <Link to="/Rupture"> 
-              <img src="/src/PinterestBoard/assets/GD/RuptureThumb.png" alt="Rupture Magazine" />
+            <Link to="/AnaPortfolio/Rupture"> 
+              <img src="assets/GD/RuptureThumb.png" alt="Rupture Magazine" />
               <div className="tags">
                 <p className="tag">↗</p>
               </div>
@@ -107,8 +107,8 @@ function PinterestBoard() {
           </div>}
           {visibleGD && (
             <div className='boxes'>
-              <Link to="/Antagonico"> 
-                <img src="/src/PinterestBoard/assets/GD/AntagonicoThumb.png" alt="Antagónico" />
+              <Link to="/AnaPortfolio/Antagonico"> 
+                <img src="assets/GD/AntagonicoThumb.png" alt="Antagónico" />
                 <div className="tags">
                 <p className="tag">↗</p>
               </div>
@@ -116,71 +116,65 @@ function PinterestBoard() {
             </div>
           )}
           {visiblePH && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/PH/LaranjaThumb.png" alt="Orange Sign" />
+            <img src="assets/PH/LaranjaThumb.png" alt="Orange Sign" />
           </div>}
           {visibleIL && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/IL/YetiThumb.png" alt="Yeti" />
+            <img src="assets/IL/YetiThumb.png" alt="Yeti" />
           </div>}
           {visiblePH && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/PH/FilipaThumb.png" alt="Girl" />
+            <img src="assets/PH/FilipaThumb.png" alt="Girl" />
           </div>}
 
 
 
 
           {visibleIL && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/IL/MageThumb.png" alt="Mage" />
+            <img src="assets/IL/MageThumb.png" alt="Mage" />
           </div>}
           {visibleGD && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/GD/ErrarThumb.png" alt="Errar é humano" />
+            <img src="assets/GD/ErrarThumb.png" alt="Errar é humano" />
           </div>}
           {visibleUI && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/UI/ViewThumb.png" alt="View Generator" />
+            <img src="assets/UI/ViewThumb.png" alt="View Generator" />
           </div>}
           {visiblePH && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/PH/IcebergThumb.png" alt="Iceberg" />
+            <img src="assets/PH/IcebergThumb.png" alt="Iceberg" />
           </div>}
           {visibleGD && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/GD/MonofolhaThumb.png" alt="Monofolha" />
+            <img src="assets/GD/MonofolhaThumb.png" alt="Monofolha" />
           </div>}
           {visibleIL && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/IL/MontanhaThumb.png" alt="Montanha" />
+            <img src="assets/IL/MontanhaThumb.png" alt="Montanha" />
           </div>}
           {visiblePH && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/PH/CasaThumb.png" alt="House" />
+            <img src="assets/PH/CasaThumb.png" alt="House" />
           </div>}
           {visibleGD && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/GD/MurderThumb.png" alt="Murder Jam" />
+            <img src="assets/GD/MurderThumb.png" alt="Murder Jam" />
           </div>}
           {visibleIL && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/IL/OverThumb.png" alt="Over the Garden Wall fanart" />
+            <img src="assets/IL/OverThumb.png" alt="Over the Garden Wall fanart" />
           </div>}
           {visibleGD && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/GD/InfographicThumb.png" alt="Infographic" />
+            <img src="assets/GD/InfographicThumb.png" alt="Infographic" />
           </div>}
           {visiblePH && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/PH/SinalThumb.png" alt="Road Sign" />
+            <img src="assets/PH/SinalThumb.png" alt="Road Sign" />
           </div>}
-
-          
-
-
-
-
           {visibleUI && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/UI/AvatarThumb.png" alt="Avatar Generator" />
+            <img src="assets/UI/AvatarThumb.png" alt="Avatar Generator" />
           </div>}
           {visiblePH && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/PH/CasaThumb.png" alt="House" />
+            <img src="assets/PH/CasaThumb.png" alt="House" />
           </div>}
           {visibleGD && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/GD/SquaresThumb.png" alt="Squares" />
+            <img src="assets/GD/SquaresThumb.png" alt="Squares" />
           </div>}
           {visibleIL && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/IL/SketchThumb.png" alt="Sketch" />
+            <img src="assets/IL/SketchThumb.png" alt="Sketch" />
           </div>}
           {visibleIL && <div className='boxes'>
-            <img src="/src/PinterestBoard/assets/IL/ExplosionThumb.png" alt="Explosion" />
+            <img src="assets/IL/ExplosionThumb.png" alt="Explosion" />
           </div>}
         </div>
       </div>

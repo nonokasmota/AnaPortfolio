@@ -6,8 +6,8 @@ function Ana() {
   return (
     <>
       <div id="anawrapper">
-        <a href='/' className="Back">
-          <img src="/public/arrowbottom.svg" alt=""/>
+        <a href='/AnaPortfolio/' className="Back">
+          <img src="arrowbottom.svg" alt=""/>
         </a>
         <div className="BodyAna">
           <div className="Text">
@@ -51,7 +51,7 @@ function Ana() {
           </div>
           </div>
           <div className="ImageAna">
-            <img src="/public/Ana/ImageAna.jpg" alt="Ana's photo"/>
+            <img src="Ana/ImageAna.jpg" alt="Ana's photo"/>
           </div>
         </div>
       </div>

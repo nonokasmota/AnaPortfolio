@@ -26,14 +26,14 @@ function Voof() {
   return (
     <>
     <div className='Back'>
-      <a href='/'>
-      <img src="/public/arrowtop.svg" className='BackIcon' alt="" />
+      <a href='/AnaPortfolio/'>
+      <img src="arrowtop.svg" className='BackIcon' alt="" />
       </a>
     </div>
 
     <div className="BodyVoof">
       <div className="SmallerSection">
-        <img src="/public/Voof/Image1.png" alt="Voof" id="FirstImageBig" className="ImageBig"/>
+        <img src="Voof/Image1.png" alt="Voof" id="FirstImageBig" className="ImageBig"/>
         <div className='MainText'>
           <h1>Voof</h1>
           <div className='MainHolder'>
@@ -63,13 +63,13 @@ function Voof() {
         </div>
       
         <div className="TwoImagesVoof">
-          <img  className="Image1" src="/public/Voof/Image2.png" alt="" />
-          <img className="Image2" src="/public/Voof/Image3.png" alt="" />
+          <img  className="Image1" src="Voof/Image2.png" alt="" />
+          <img className="Image2" src="Voof/Image3.png" alt="" />
         </div>
       </div>
 
       <div className='BiggerSection'>
-        <div onClick={toggleResearch} className={`Hide ${isVisibleResearch ? '' : 'Rotated'}`}><img src="/public/openclose.svg" alt=""/></div>
+        <div onClick={toggleResearch} className={`Hide ${isVisibleResearch ? '' : 'Rotated'}`}><img src="openclose.svg" alt=""/></div>
         
         <div className="SmallerSection">
           <h1>Research</h1>
@@ -84,15 +84,15 @@ function Voof() {
               <p>We researched what was already out there working to help reduce stress. We did overall research with all projects we could find, listed out what was working and didn’t work with each, short descriptions and what stood out from each approach.</p>
             </div>
 
-            <img src="/public/Voof/Image4.png" alt="" className="ImageBig"/>
-            <img src="/public/Voof/Image5.png" alt="" className="ImageBig"/>
+            <img src="Voof/Image4.png" alt="" className="ImageBig"/>
+            <img src="Voof/Image5.png" alt="" className="ImageBig"/>
           
 
             <div className="ResearchText">
               <h2>User Research:</h2>
               We conducted interviews and analysed the data to characterize our target audience.
             </div>
-            <img src="/public/Voof/Image6.png" alt="" className="ImageBig"/>
+            <img src="Voof/Image6.png" alt="" className="ImageBig"/>
           
 
             <div className="ResearchText">
@@ -102,11 +102,11 @@ function Voof() {
               </p>      
               <h2>Personas:</h2>
             </div>
-            <img src="/public/Voof/Image9.png" alt="" className="ImageBig"/>
+            <img src="Voof/Image9.png" alt="" className="ImageBig"/>
             <div className='ResearchText'>
               <h2>User Journeys:</h2>
             </div>
-            <img src="/public/Voof/Image8.png" alt="" className="ImageBig"/>
+            <img src="Voof/Image8.png" alt="" className="ImageBig"/>
           </div>
           )}
         </div>
@@ -114,17 +114,17 @@ function Voof() {
 
       <div className='BiggerSection'>
       
-        <div onClick={toggleDesign} className={`Hide ${isVisibleDesign ? '' : 'Rotated'}`}><img src="/public/openclose.svg" alt=""/></div>
+        <div onClick={toggleDesign} className={`Hide ${isVisibleDesign ? '' : 'Rotated'}`}><img src="openclose.svg" alt=""/></div>
         <div className="SmallerSection">
           <h1>Design</h1>
           {isVisibleDesign && (
             <div className="Design">
               <h2>Interaction Flow:</h2>
-              <img src="/public/Voof/Image10.png" alt="" className="ImageBig" />
+              <img src="Voof/Image10.png" alt="" className="ImageBig" />
               <h2>Voof Wireframes:</h2>
-              <img src="/public/Voof/Image11.png" alt="" className="ImageBig" />
+              <img src="Voof/Image11.png" alt="" className="ImageBig" />
               <h2>App Wireframes:</h2>
-              <img src="/public/Voof/Image12.png" alt="" className="ImageBig" />
+              <img src="Voof/Image12.png" alt="" className="ImageBig" />
 
               <div className='MainText'>
                 <h2> Components:</h2>
@@ -175,9 +175,9 @@ function Voof() {
                   </div>
                 </div>
               </div>
-              <img src="/public/Voof/Image13.png" alt="" className="ImageBig" />
-              <img src="/public/Voof/Image14.png" alt="" className="ImageBig" />
-              <img src="/public/Voof/Image15.png" alt="" className="ImageBig" />
+              <img src="Voof/Image13.png" alt="" className="ImageBig" />
+              <img src="Voof/Image14.png" alt="" className="ImageBig" />
+              <img src="Voof/Image15.png" alt="" className="ImageBig" />
               <div className='UserTestingText'>
                 <h2>User Testing:</h2>
                 <p>Due to the hypothetical nature of this project and the fact that it is not actively being
@@ -206,29 +206,29 @@ function Voof() {
                 </p>
               </div>
               <h2>Style Guide</h2>
-              <img src="/public/Voof/Image16.png" alt="" className="ImageBig" />
-              <img src="/public/Voof/Image17.png" alt="" className="ImageBig" />
-              <img src="/public/Voof/Image18.png" alt="" className="ImageBig" />
-              <img src="/public/Voof/Image19.png" alt="" className="ImageBig" />
-              <img src="/public/Voof/Image20.png" alt="" className="ImageBig" />
-              <img src="/public/Voof/Image21.png" alt="" className="ImageBig" />
-              <img src="/public/Voof/Image22.png" alt="" className="ImageBig" />
-              <img src="/public/Voof/Image23.png" alt="" className="ImageBig" />
+              <img src="Voof/Image16.png" alt="" className="ImageBig" />
+              <img src="Voof/Image17.png" alt="" className="ImageBig" />
+              <img src="Voof/Image18.png" alt="" className="ImageBig" />
+              <img src="Voof/Image19.png" alt="" className="ImageBig" />
+              <img src="Voof/Image20.png" alt="" className="ImageBig" />
+              <img src="Voof/Image21.png" alt="" className="ImageBig" />
+              <img src="Voof/Image22.png" alt="" className="ImageBig" />
+              <img src="Voof/Image23.png" alt="" className="ImageBig" />
             </div>
           )}
         </div>  
       </div>
 
       <div className='BiggerSection'>
-        <div onClick={toggleFinalProject} className={`Hide ${isVisibleFinalProject ? '' : 'Rotated'}`}><img src="/public/openclose.svg" alt=""/></div>
+        <div onClick={toggleFinalProject} className={`Hide ${isVisibleFinalProject ? '' : 'Rotated'}`}><img src="openclose.svg" alt=""/></div>
         <div className="SmallerSection">
           <h1>Final Project</h1>
           {isVisibleFinalProject && (
             <div className="FinalProject">
               <h3>Voof UI:</h3>
-              <img src="/public/Voof/Image24.png" alt="" className="ImageBig" />
+              <img src="Voof/Image24.png" alt="" className="ImageBig" />
               <h3>App UI:</h3>
-              <img src="/public/Voof/Image25.png" alt="" className="ImageBig" />
+              <img src="Voof/Image25.png" alt="" className="ImageBig" />
               <div className='WhatText'>
                 <h3>What I learned</h3>
                 <div>
