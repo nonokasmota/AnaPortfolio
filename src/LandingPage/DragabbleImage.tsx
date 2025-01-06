@@ -126,7 +126,7 @@ const DraggableImage = () => {
   return (
     <div id="dragcontainer">
       <img
-        src="/Photography/IcebergThumb.png"
+        src={imageArray[currentImageIndex]}
         alt="Draggable Work"
         id="dragimg"
         loading="lazy"

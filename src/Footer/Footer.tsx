@@ -4,7 +4,7 @@ import React from 'react';
 import './Footer.css';
 const Footer: React.FC = () => {
   const ref = useRef(null);
-    const scrollToComponent = (ref: any) => {
+    const scrollToComponent = () => {
       window.scrollTo({
         top: 0, 
         behavior: "smooth"
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
             </a>
           </div>
         </div>
-        <button onClick={() => scrollToComponent(ref)} id='scrollButtonTop'>to top ↗</button>
+        <button onClick={() => scrollToComponent()} id='scrollButtonTop'>to top ↗</button>
       </div>
     </div>
   );
