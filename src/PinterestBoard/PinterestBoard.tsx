@@ -1,7 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './PinterestBoard.css';
 import { Link } from 'react-router-dom';
-
 
 function PinterestBoard() {
   const [visibleGD, setVisibleGD] = useState(true); // GD = Graphic Design
@@ -32,9 +31,18 @@ function PinterestBoard() {
       setVisibleALL(false);
     }
   };
+  useEffect(() => {
+    setVisibleGD(true);
+    setVisibleUI(false);
+    setVisibleIL(false);
+    setVisiblePH(false);
+    setVisibleALL(false);
+  }, []);
+  
   
 
   return (
+    
       <div className='GlobalPinterestBoard' id='targetSelection'>
         <div className='Buttons'>
             <button onClick={toggleVisibilityGD} className={visibleGD ? 'clicked' : 'unclicked'}>Graphic Design</button>

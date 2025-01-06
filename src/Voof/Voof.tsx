@@ -55,7 +55,7 @@ function Voof() {
                 <div className="MyRole">
                   <h2>My Role:</h2>
                   <p>
-                  Aside from working within every step of the way, I took up the role of a leader on this project, assigning roles, making sure they’re done in time, and helping them if they’re not.</p>
+                  Aside from working every step of the way, I took up the role of a leader on this project, assigning roles, making sure they’re done in time, and helping them if they’re not.</p>
                 </div>
               </div>
             </div>

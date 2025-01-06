@@ -1,4 +1,4 @@
-import { StrictMode } from 'react';
+import { StrictMode, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import Plus from './Plus/Plus.tsx';
@@ -11,6 +11,32 @@ import BaseWork from './BaseWorks/BaseWork.tsx';
 
 const App = () => {
   const location = useLocation();
+  useEffect(() => {
+    const buttons = document.querySelectorAll("button");
+    
+    buttons.forEach((button) => {
+        // Handle touch start for mobile devices
+  button.addEventListener('touchstart', () => {
+    button.style.backgroundColor = '#CFC6D2'; // Change color on press
+  });
+
+  // Handle touch end for mobile devices
+  button.addEventListener('touchend', () => {
+    button.style.backgroundColor = '#F5EDF7'; // Revert to original color
+  });
+
+  // Handle mouse down for desktop devices
+  button.addEventListener('mousedown', () => {
+    button.style.backgroundColor = '#CFC6D2'; // Change color on press
+  });
+
+  // Handle mouse up for desktop devices
+  button.addEventListener('mouseup', () => {
+    button.style.backgroundColor = '#F5EDF7'; // Revert to original color
+    });
+  });
+
+  }, []);
 
   return (
     <div className="content-wrapper">
@@ -60,8 +86,8 @@ const App = () => {
           path="/AnaPortfolio/Conflict"
           element={
             <BaseWork
-              Title="Conflict of interest"
-              Text1="Small magazine about the usage of grids in graphic design."
+              Title="Conflict of Interest"
+              Text1="Foldable pamphlet Informative pamphlet about Jan Van Toorn’s ’Design and Reflexivity’ manifesto. <br /> This manifesto revolves around designer's conflict of interest between serving the public interest (doing things for the general good) and following private interests of clients and media. <br /> This pamphlet serves as a warning about the ethical dilemmas outlined in Jan Van Toorn’s manifesto. It reminds designers of the inherent conflict of interests of their job."
               Text2="This magazine explores the use of grids in graphic design by juxtaposing the work of two iconic designers: Josef Müller-Brockmann and Rosmarie Tissi."
               Text3="Their contrasting approaches to grid-based design highlight the diversity and versatility of this foundational technique."
               Image1="GraphicDesign\Conflict\Conflict-1.png"
@@ -69,8 +95,8 @@ const App = () => {
               Image3="GraphicDesign\Conflict\Conflict-3.png"
               Image4="GraphicDesign\Conflict\Conflict-4.png"
               Image5="GraphicDesign\Conflict\Conflict-5.png"
-              Context="University pair project"
-              Role="All of the roles were distributed so that both me and my colleague could be a part of every step. We both did the research for the magazine, designed the item, printed, and sew."
+              Context="University project"
+              Role="This was a solo project. I did all the research, design, and production of the pamphlet by myself."
             />
           }
         />
