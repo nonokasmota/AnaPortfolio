@@ -10,10 +10,22 @@ function PinterestBoard() {
   const [visibleALL, setVisibleALL] = useState(true); // ALL = All
 
 
-  const toggleVisibilityGD = () => setVisibleGD(!visibleGD);
-  const toggleVisibilityUI = () => setVisibleUI(!visibleUI);
-  const toggleVisibilityIL = () => setVisibleIL(!visibleIL);
-  const toggleVisibilityPH = () => setVisiblePH(!visiblePH);
+  const toggleVisibilityGD = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setVisibleGD(!visibleGD);
+    event.currentTarget.style.setProperty('background-color', !visibleGD ? '#100E0F' : '#F5EDF7', 'important'); 
+  };
+  const toggleVisibilityUI = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setVisibleUI(!visibleUI);
+    event.currentTarget.style.setProperty('background-color', !visibleUI ? '#100E0F' : '#F5EDF7', 'important'); 
+  };
+  const toggleVisibilityIL = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setVisibleIL(!visibleIL);
+    event.currentTarget.style.setProperty('background-color', !visibleIL ? '#100E0F' : '#F5EDF7', 'important'); 
+  };
+  const toggleVisibilityPH = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setVisiblePH(!visiblePH);
+    event.currentTarget.style.setProperty('background-color', !visiblePH ? '#100E0F' : '#F5EDF7', 'important'); 
+  };
   const toggleVisibilityALL = () => {
     if (!visibleGD || !visibleUI || !visibleIL || !visiblePH || !visibleALL) {
       // Ensure all categories are visible
