@@ -1,9 +1,7 @@
-import { useRef } from "react";
 
 import React from 'react';
 import './Footer.css';
 const Footer: React.FC = () => {
-  const ref = useRef(null);
     const scrollToComponent = () => {
       window.scrollTo({
         top: 0, 
