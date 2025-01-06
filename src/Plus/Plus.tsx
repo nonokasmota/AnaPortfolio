@@ -1,12 +1,13 @@
 import "./Plus.css";
-
+import { Link } from "react-router-dom";
 function Plus() {
   return (
     <>
       <div>
-        <a href="/AnaPortfolio/Ana">
-          <img src="plus.svg" alt="+" className="Plus"/>
-        </a>
+      <Link to="/AnaPortfolio/Ana">
+        <img src="plus.svg" alt="+" className="Plus"/>
+      </Link>
+
       </div>
     </>
   );
