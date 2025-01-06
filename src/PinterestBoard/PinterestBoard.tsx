@@ -26,22 +26,25 @@ function PinterestBoard() {
     setVisiblePH(!visiblePH);
     event.currentTarget.style.setProperty('background-color', !visiblePH ? '#100E0F' : '#F5EDF7', 'important'); 
   };
+
+
   const toggleVisibilityALL = () => {
     if (!visibleGD || !visibleUI || !visibleIL || !visiblePH || !visibleALL) {
       // Ensure all categories are visible
-      setVisibleGD(true);
-      setVisibleUI(true);
-      setVisibleIL(true);
-      setVisiblePH(true);
+      toggleVisibilityGD({ currentTarget: document.getElementById("GD") } as React.MouseEvent<HTMLButtonElement>);
+      toggleVisibilityUI({ currentTarget: document.getElementById("UI") } as React.MouseEvent<HTMLButtonElement>);
+      toggleVisibilityIL({ currentTarget: document.getElementById("IL") } as React.MouseEvent<HTMLButtonElement>);
+      toggleVisibilityPH({ currentTarget: document.getElementById("PH") } as React.MouseEvent<HTMLButtonElement>);
       setVisibleALL(true);
     } else {
       // Toggle "All" off, hiding everything
-      setVisibleGD(false);
-      setVisibleUI(false);
-      setVisibleIL(false);
-      setVisiblePH(false);
+      toggleVisibilityGD({ currentTarget: document.getElementById("GD") } as React.MouseEvent<HTMLButtonElement>);
+      toggleVisibilityUI({ currentTarget: document.getElementById("UI") } as React.MouseEvent<HTMLButtonElement>);
+      toggleVisibilityIL({ currentTarget: document.getElementById("IL") } as React.MouseEvent<HTMLButtonElement>);
+      toggleVisibilityPH({ currentTarget: document.getElementById("PH") } as React.MouseEvent<HTMLButtonElement>);
       setVisibleALL(false);
     }
+    document.getElementById("ALL")?.style.setProperty('background-color', !visibleALL ? '#100E0F' : '#F5EDF7', 'important');
   };
   useEffect(() => {
     setVisibleGD(true);
@@ -57,11 +60,11 @@ function PinterestBoard() {
     
       <div className='GlobalPinterestBoard' id='targetSelection'>
         <div className='Buttons'>
-            <button onClick={toggleVisibilityGD} className={visibleGD ? 'clicked' : 'unclicked'}>Graphic Design</button>
-            <button onClick={toggleVisibilityUI} className={visibleUI ? 'clicked': 'unclicked'}>UI/UX</button>
-            <button onClick={toggleVisibilityIL} className={visibleIL ? 'clicked': 'unclicked'}>Illustration</button>
-            <button onClick={toggleVisibilityPH} className={visiblePH ? 'clicked': 'unclicked'}>Photography</button>
-            <button onClick={toggleVisibilityALL} className={visibleALL ? 'clicked': 'unclicked'}>All</button>
+            <button id="GD" onClick={toggleVisibilityGD} className={visibleGD ? 'clicked' : 'unclicked'}>Graphic Design</button>
+            <button id="UI" onClick={toggleVisibilityUI} className={visibleUI ? 'clicked': 'unclicked'}>UI/UX</button>
+            <button id="IL" onClick={toggleVisibilityIL} className={visibleIL ? 'clicked': 'unclicked'}>Illustration</button>
+            <button id="PH" onClick={toggleVisibilityPH} className={visiblePH ? 'clicked': 'unclicked'}>Photography</button>
+            <button id="ALL" onClick={toggleVisibilityALL} className={visibleALL ? 'clicked': 'unclicked'}>All</button>
         </div>
 
         {!visibleUI && !visiblePH && !visibleGD && !visibleIL && (
