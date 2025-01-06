@@ -35,14 +35,14 @@ function PinterestBoard() {
       toggleVisibilityUI({ currentTarget: document.getElementById("UI") } as React.MouseEvent<HTMLButtonElement>);
       toggleVisibilityIL({ currentTarget: document.getElementById("IL") } as React.MouseEvent<HTMLButtonElement>);
       toggleVisibilityPH({ currentTarget: document.getElementById("PH") } as React.MouseEvent<HTMLButtonElement>);
-      setVisibleALL(true);
+      setVisibleALL(!visibleALL);
     } else {
       // Toggle "All" off, hiding everything
       toggleVisibilityGD({ currentTarget: document.getElementById("GD") } as React.MouseEvent<HTMLButtonElement>);
       toggleVisibilityUI({ currentTarget: document.getElementById("UI") } as React.MouseEvent<HTMLButtonElement>);
       toggleVisibilityIL({ currentTarget: document.getElementById("IL") } as React.MouseEvent<HTMLButtonElement>);
       toggleVisibilityPH({ currentTarget: document.getElementById("PH") } as React.MouseEvent<HTMLButtonElement>);
-      setVisibleALL(false);
+      setVisibleALL(!visibleALL);
     }
     document.getElementById("ALL")?.style.setProperty('background-color', !visibleALL ? '#100E0F' : '#F5EDF7', 'important');
   };
@@ -64,7 +64,7 @@ function PinterestBoard() {
             <button id="UI" onClick={toggleVisibilityUI} className={visibleUI ? 'clicked': 'unclicked'}>UI/UX</button>
             <button id="IL" onClick={toggleVisibilityIL} className={visibleIL ? 'clicked': 'unclicked'}>Illustration</button>
             <button id="PH" onClick={toggleVisibilityPH} className={visiblePH ? 'clicked': 'unclicked'}>Photography</button>
-            <button id="ALL" onClick={toggleVisibilityALL} className={visibleALL ? 'clicked': 'unclicked'}>All</button>
+            <button id="ALL" onClick={toggleVisibilityALL} className={visibleALL ? 'clicked': 'unclicked'}>inverse</button>
         </div>
 
         {!visibleUI && !visiblePH && !visibleGD && !visibleIL && (
