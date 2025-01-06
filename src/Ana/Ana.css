@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+#anawrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.BodyAna {
+  font-family: 'Inter', sans-serif;
+  flex-direction: row;
+  align-items: start;
+  display: flex;
+  padding: 0;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 95px;
+  justify-content: flex-end;
+  align-content: flex-end;
+  /* align-content: flex-end; #TODO: TRATAR DO ALINHAMENTO DO TEXTO NO NOME */
+}
+
+.Text {
+  height: 100%;
+  display: flex;
+  width: 30%;
+  min-width: 350px;
+  padding-right: 32px;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+}
+
+.ImageAna {
+  height: 96dvh;
+  width: 70%;
+  object-fit: cover;
+  border-radius: 2.5px;
+  margin: 0;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: var(--grey-dark);
+}
+
+.ImageAna img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+h3 {
+  margin-bottom: 16px;
+  margin-top: 8px;
+  font-size:45px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.Back {
+  width: 18px;
+  height: 18px;
+  padding: 12px;
+  border-color: var(--black);
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  background-color: var(--white);
+  margin: 25px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+#anawrapper .Back img {
+  border-radius: 0%;
+  height: 15px;
+  transform: rotate(180deg);
+}
+
+.Back:hover,
+.Back:active {
+  background-color: var(--almost-white-grey);
+}
+
+.Socials {
+  margin-top: 32px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  height: 35px;
+}
+
+.Socials a, .Socials a svg {
+  width: 40px;
+}
+
+svg:hover path,
+svg:hover circle,
+svg:hover rect,
+svg:active path,
+svg:active circle,
+svg:active rect {
+  fill: var(--black);
+}
+
+svg {
+  height: 100%;
+}
+
+p {
+  margin: 0%;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 480px) {
+  .BodyAna {
+    flex-direction: column-reverse;
+    padding: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  .ImageAna {
+    width: 100%;
+    height: 45dvh;
+  }
+
+  .BodyAna .Text{
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .BodyAna .Text h3{
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+
+  .Socials {
+    margin-top: 24px;
+  }
+
+  .Back {
+    position: absolute;
+  }
+}

@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  width: 100dvw;
+  overflow-x: hidden;
+}
+
+.BodyTemplate {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100dvw;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.Rotated{
+  transform: rotate(-90deg);
+}
+
+.Hide{
+  width: 18px;
+  height: 18px;
+  padding: 12px;
+  border-color: var(--black);
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  background-color: var(--white);
+  margin: 10px;
+  margin-right: 25px;
+  position: relative;
+  margin-top: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Hide img {
+  border-radius: 0%;
+  width: 20px;
+}
+
+.Hide:hover {
+  background-color: var(--almost-white-grey);
+}
+
+.ResearchText{
+  width: 70%;
+}
+
+.Components {
+  width: 25%;
+  padding-right: 32px;
+}
+
+.moreproject {
+  display: flex;
+  flex-direction: column;
+}
+
+.moreproject a {
+  color: var(--grey-lighter);
+  text-decoration:underline;
+  font-style: oblique;
+}
+
+.moreproject a:hover {
+  color: var(--black);
+}
+
+#Context {
+  margin-top: 0%;
+}
+
+.MyRole {
+  width: 75%;
+}
+
+.UserTestingText{
+  width: 60%;
+}
+
+.ThirdText{
+  width: 70%;
+}
+
+.WhatText{
+  width: 70%;
+}
+
+.CircleBorder {
+  width: 100px;
+  height: 100px;
+  border: 5px solid var(--black);
+  border-radius: 50%;
+}
+
+.BodyTemplate .SmallerSection .TwoImagesTemplate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 500px;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.BodyTemplate .MainText {
+  margin-bottom: 16px;
+}
+
+.Image1 {
+  margin-right: 15px;
+  width: 55%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2.5px;
+  border: 1.5px solid var(--black);
+}
+
+.Back img {
+  border-radius: 0%;
+  height: 15px;
+  transform: rotate(-90deg);
+}
+
+.Image4 {
+  width: 55%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2.5px;
+  border: 1.5px solid var(--black);
+}
+
+.Image2 {
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2.5px;
+  border: 1.5px solid var(--black);
+}
+
+.Image3 {
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2.5px;
+  margin-right: 15px;
+  border: 1.5px solid var(--black);
+}
+
+img.ImageBig {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2.5px;
+  margin-top: 24px;
+  box-shadow: none;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  width: 100%;
+  align-items: start;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  width: 100%;
+  align-items: start;
+  margin: 0;
+  margin-top: 24px;
+}
+
+.SmallerSection h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0%;
+}
+
+p {
+  line-height: 21px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.MainText{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FirstText {
+  width: 50%;
+  padding-right: 16px;
+}
+
+.MainHolder {
+  display: flex;
+  flex-direction: row;
+}
+
+.MainSideHolder {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#FirstImageBig {
+  margin-top: 0%;
+  height: 75dvh;
+  margin-bottom: 16px;
+}
+
+.BiggerSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.SmallerSection {
+  width: calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+@media (max-width: 480px) {
+  .TwoImagesTemplate {
+    flex-direction: column !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+
+  .TwoImagesTemplate img {
+    width: 100% !important;
+    margin: 0 !important;
+    margin-bottom: 8px !important;
+    height: auto !important;
+  }
+
+  #FirstTwoImagesTemplate {
+    margin-top: 16px !important;
+  }
+}

@@ -1,0 +1,153 @@
+/* Preconnect to the font source */
+@import url('https://rsms.me/inter/inter.css');
+
+/* Apply the Inter font with features */
+:root {
+  font-family: 'Inter', sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* Enable ligatures and contextual alternates */
+}
+
+/* Use the variable font when supported */
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: 'InterVariable', sans-serif;
+  }
+}
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+
+  --white: #F5EDF7; 
+  --black: #100E0F;
+  --grey-dark: #1E1A1C;
+  --grey-light: #5c5358;
+  --grey-lighter: #ada0a8;
+  --almost-white-grey: #CFC6D2;
+  --transparent-grey: #39323621;
+
+  color-scheme: light dark;
+  color: var(--grey-dark);
+  background-color: var(--white);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.italic {
+  font-style: oblique;
+}
+
+a {
+  font-weight: 600;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+html {
+  width: 100dvw;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100dvh;
+  margin: 0;
+}
+
+root {
+  width: 100%;
+}
+
+h2 {
+  line-height: 1.1;
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+button {
+  border-radius: 90px;
+  border: 1.5px solid var(--black);
+  padding: 0.6em 1.2em;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.25s;
+  color: var(--black);
+  height: 45px;
+}
+button:hover,
+button:active {
+  background-color: var(--almost-white-grey);
+  color: var(--black);
+}
+button:focus,
+button:focus-visible {
+  outline: 8px auto -webkit-focus-ring-color;
+}
+
+.clicked {
+  background-color: var(--black);
+  color: var(--white);
+}
+.clicked:hover {
+  background-color: var(--grey-light);
+  color: var(--white);
+}
+
+@media (prefers-color-scheme: dark) { /* TODO: TROCAR PARA ISTO FICAR COM CORES DARK */
+  :root {
+    color: var(--grey-dark);
+    background-color: var(--white);
+  }
+  a:hover {
+    color: var(--almost-white-grey);
+  }
+  button {
+    background-color: var(--white);
+  }
+}
+
+p {
+  color: var(--grey-light);
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--black);
+  font-weight: 600;
+}
+
+/* App Container styles */
+.app-container {
+  background-color: white; /* White bars */
+
+}
+
+.content-wrapper {
+  max-width: 1440px; /* Typical laptop screen width */
+  width: 100%; /* Full width on smaller screens */
+  margin: 0 auto; /* Centers the content */
+  padding: 0 0; /* Add padding for smaller screens */
+}
+
+

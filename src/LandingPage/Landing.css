@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.LandingDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  width: 100%;
+  margin: 0;
+  overflow-y: hidden;
+}
+.TitleLanding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 200px;
+  text-align: center;
+  font-weight: 700;
+  font-style: oblique;
+  margin: 0%;
+  margin-top: 0;
+  z-index: -1000;
+  line-height: 190px;
+  transform: translateY(calc(50dvh - 50%));
+  color: var(--black);
+}
+.LandingDiv button {
+  margin-top: auto;
+  margin-bottom: 10dvh;
+}
+
+
+#dragcontainer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -50;
+
+  /* height: 100%;
+  width: 100%; */
+}
+
+#dragimg {
+  height: 400px;
+  width: 300px;
+  border-radius: 2.5px;
+  border: 1.5px solid var(--black);
+  object-fit: cover;
+} 
+
+@media (max-width: 480px) {
+  .TitleLanding {
+    font-size: 118px; 
+    line-height: 100px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  #dragimg {
+    height: 220px;
+    width: 165px;
+    border-radius: 2.5px;
+    border: 1.5px solid var(--black);
+    object-fit: cover;
+  } 
+}
+
+
+

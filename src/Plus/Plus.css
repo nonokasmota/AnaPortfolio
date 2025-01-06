@@ -1,0 +1,42 @@
+.Plus{
+  position: fixed;
+  right: 0px;
+  margin-top: 60px;
+  width: 18px;
+  height: 18px;
+  margin: 25px;
+  padding: 12px;
+  border-color: var(--black);
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  z-index: 100;
+  background-color: var(--white);
+}
+
+.Plus:hover,
+.Plus:active {
+  position: fixed;
+  right: 0px;
+  margin-top: 60px;
+  width: 18px;
+  height: 18px;
+  margin: 25px;
+  padding: 12px;
+  border-color: var(--black);
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  z-index: 100;
+  background-color: var(--almost-white-grey);
+}
+
+@media (max-width: 480px) {
+  .Plus{
+    position:absolute;
+  }
+}

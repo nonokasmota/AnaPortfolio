@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.Black .Socials {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 32px;
+  margin-top: 16px;
+  height: 40px;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.Black .Socials svg,
+.FooterSvg {
+  height: 40px;
+  width: auto;
+  align-self: center;
+}
+
+.FooterSvg {
+  width: 40px;
+}
+
+.Footer {
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  position: relative;
+  bottom: 0%;
+  left: 0;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  overflow-x: hidden;
+}
+
+.Black{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--black);
+  color: var(--white);
+  padding-bottom: 50px;
+}
+
+#FooterStuff {
+  flex-direction: column;
+  align-items: start;
+  display: flex;
+  padding: 0;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 205px;
+  justify-content: flex-end;
+  align-content: flex-end;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.Black p {
+  color: var(--grey-lighter);
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.Black .nomargintop {
+  margin-top: 0%;
+  margin-bottom: 16px;
+}
+
+.Black svg:hover path,
+.Black svg:hover circle,
+.Black svg:hover rect, 
+.Black svg:active path,
+.Black svg:active circle,
+.Black svg:active rect {
+  fill: var(--white);
+}
+
+@media (max-width: 480px) {
+  .pinterest-board {
+    column-count: 1;
+  }
+
+  #FooterStuff {
+    padding-left:0;
+    padding-right:0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Footer {
+    margin-top: 65px;
+  }
+}

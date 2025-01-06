@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.LandingDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  width: 100dvw;
+}
+.TitleLanding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 128px;
+  text-align: center;
+}
+
+.slidecontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 95vw;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background: url('./assets/image.png');
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 25px;
+  border: 0;
+  background: url('./assets/image.png');
+  cursor: pointer;
+}
+.input-range-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.input-range {
+  width: 300px;
+  height: 8px;
+  background: #ddd;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity .2s;
+}
+
+.input-range:hover {
+  opacity: 1;
+}
+
+.input-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: url('path/to/your/image.png') no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.input-range::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: url('assets/image.png') no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+}
+

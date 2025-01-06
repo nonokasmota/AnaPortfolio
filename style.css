@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --black: #030201;
+  --white: #d4d3d9;
+  --pink: #e50052;
+  --grey: #858098;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  background-color: var(--black);
+  position: relative;
+  display: inline-block;
+  width: 840px;
+  height: 560px;
+  border: 5px solid var(--black);
+  border-radius: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+img {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.control-button {
+  background-color: transparent;
+  color: var(--black);
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 96px;
+}
+
+.overlay-Title,
+.overlay-Date {
+  display: inline-block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.image-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, var(--black) 20%, transparent);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.image-container:hover::after {
+  opacity: 1;
+}
+
+.image-container:hover .overlay-text {
+  opacity: 1;
+}
+
+.change-color-text:hover {
+  color: var(--pink);
+}
+
+.change-color-text:hover::after {
+  background: linear-gradient(to right, var(--pink) 20%, transparent);
+}
