@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import './BaseWork.css';
-import Footer from '../Footer/Footer.tsx'
 
 interface BaseWorkProps {
   Title: string;

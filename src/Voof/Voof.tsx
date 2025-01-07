@@ -1,5 +1,4 @@
 import './Voof.css';
-import Footer from '../Footer/Footer.tsx'
 
 import { useState, useEffect } from 'react';
 

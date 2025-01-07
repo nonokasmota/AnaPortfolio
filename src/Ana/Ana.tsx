@@ -1,5 +1,4 @@
 import "./Ana.css";
-import Footer from "../Footer/Footer";
 
 function Ana() {
   

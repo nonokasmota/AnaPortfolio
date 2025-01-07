@@ -2,7 +2,6 @@ import { useRef } from "react";
 import './Landing.css';
 import DraggableImage from './DragabbleImage';
 import PinterestBoard from '../PinterestBoard/PinterestBoard';
-import Footer from "../Footer/Footer";
 
 
 
