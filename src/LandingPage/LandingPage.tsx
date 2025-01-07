@@ -19,7 +19,10 @@ function LandingPage() {
     <>
       <DraggableImage />
       <div className='LandingDiv'>
-        <h1 className='TitleLanding'>Ana Mota</h1>
+        <div className="LandingTitleDiv">
+          <h1 className='TitleLanding'>Ana Mota</h1>
+          <h2>is a Product Designer, Problem Solver and a Cartoon Lover.</h2>
+        </div>
         <button onClick={() => scrollToComponent(ref)} id='scrollButton'>my work ↘</button>
       </div>
       <div ref={ref}>

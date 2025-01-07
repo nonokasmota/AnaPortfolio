@@ -131,6 +131,10 @@ a {
   border: 1.5px solid var(--black);
 }
 
+#ALL{
+  border-color: var(--transparent-grey)!important;
+}
+
 .TextPinterestBoard{
   display: flex;
   align-items: center;

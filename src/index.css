@@ -112,6 +112,28 @@ button:focus-visible {
   color: var(--white);
 }
 
+
+.clicked#ALL{
+  background-color: var(--white) !important;
+  color: var(--black) !important;
+  border-color: var(--transparent-grey) !important;
+}
+
+.unclicked:hover#ALL {
+  background-color: var(--transparent-grey) !important;
+  color: var(--black) !important;
+  border-color: var(--transparent-grey) !important;
+}
+.clicked:hover#ALL {
+  background-color: var(--transparent-grey) !important;
+  color: var(--black) !important;
+  border-color: var(--transparent-grey) !important;
+}
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
 @media (prefers-color-scheme: dark) { /* TODO: TROCAR PARA ISTO FICAR COM CORES DARK */
   :root {
     color: var(--grey-dark);

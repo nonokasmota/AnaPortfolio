@@ -8,23 +8,35 @@ function PinterestBoard() {
   const [visibleIL, setVisibleIL] = useState(true); // IL = Illustration
   const [visiblePH, setVisiblePH] = useState(true); // PH = Photography
   const [visibleALL, setVisibleALL] = useState(true); // ALL = All
-
-
+  
+  
   const toggleVisibilityGD = (event: React.MouseEvent<HTMLButtonElement>) => {
     setVisibleGD(!visibleGD);
-    event.currentTarget.style.setProperty('background-color', !visibleGD ? '#100E0F' : '#F5EDF7', 'important'); 
+    event.currentTarget.style.setProperty('background-color', !visibleGD ? '#100E0F' : '#F5EDF7', 'important');
+    if (event.currentTarget.textContent) {
+      event.currentTarget.innerHTML = !visibleGD ? event.currentTarget.textContent + "&nbsp;&nbsp;&nbsp;&nbsp;⨉" : event.currentTarget.textContent?.slice(0, -5);
+    }
   };
   const toggleVisibilityUI = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setVisibleUI(!visibleUI);
-    event.currentTarget.style.setProperty('background-color', !visibleUI ? '#100E0F' : '#F5EDF7', 'important'); 
+    setVisibleUI(!visibleUI); 
+    event.currentTarget.style.setProperty('background-color', !visibleUI ? '#100E0F' : '#F5EDF7', 'important');
+    if (event.currentTarget.textContent) {
+      event.currentTarget.innerHTML = !visibleUI ? event.currentTarget.textContent + "&nbsp;&nbsp;&nbsp;&nbsp;⨉" : event.currentTarget.textContent?.slice(0, -5);
+    }
   };
   const toggleVisibilityIL = (event: React.MouseEvent<HTMLButtonElement>) => {
     setVisibleIL(!visibleIL);
-    event.currentTarget.style.setProperty('background-color', !visibleIL ? '#100E0F' : '#F5EDF7', 'important'); 
+    event.currentTarget.style.setProperty('background-color', !visibleIL ? '#100E0F' : '#F5EDF7', 'important');
+    if (event.currentTarget.textContent) {
+      event.currentTarget.innerHTML = !visibleIL ? event.currentTarget.textContent + "&nbsp;&nbsp;&nbsp;&nbsp;⨉" : event.currentTarget.textContent?.slice(0, -5);
+    }
   };
   const toggleVisibilityPH = (event: React.MouseEvent<HTMLButtonElement>) => {
     setVisiblePH(!visiblePH);
-    event.currentTarget.style.setProperty('background-color', !visiblePH ? '#100E0F' : '#F5EDF7', 'important'); 
+    event.currentTarget.style.setProperty('background-color', !visiblePH ? '#100E0F' : '#F5EDF7', 'important');
+    if (event.currentTarget.textContent) {
+      event.currentTarget.innerHTML = !visiblePH ? event.currentTarget.textContent + "&nbsp;&nbsp;&nbsp;&nbsp;⨉" : event.currentTarget.textContent?.slice(0, -5);
+    }
   };
 
 
@@ -44,7 +56,6 @@ function PinterestBoard() {
       toggleVisibilityPH({ currentTarget: document.getElementById("PH") } as React.MouseEvent<HTMLButtonElement>);
       setVisibleALL(!visibleALL);
     }
-    document.getElementById("ALL")?.style.setProperty('background-color', !visibleALL ? '#100E0F' : '#F5EDF7', 'important');
   };
   useEffect(() => {
     setVisibleGD(true);
@@ -60,7 +71,7 @@ function PinterestBoard() {
     
       <div className='GlobalPinterestBoard' id='targetSelection'>
         <div className='Buttons'>
-            <button id="GD" onClick={toggleVisibilityGD} className={visibleGD ? 'clicked' : 'unclicked'}>Graphic Design</button>
+            <button id="GD" onClick={toggleVisibilityGD} className={visibleGD ? 'clicked' : 'unclicked'}>Graphic Design&nbsp;&nbsp;&nbsp;&nbsp;⨉</button>
             <button id="UI" onClick={toggleVisibilityUI} className={visibleUI ? 'clicked': 'unclicked'}>UI/UX</button>
             <button id="IL" onClick={toggleVisibilityIL} className={visibleIL ? 'clicked': 'unclicked'}>Illustration</button>
             <button id="PH" onClick={toggleVisibilityPH} className={visiblePH ? 'clicked': 'unclicked'}>Photography</button>
