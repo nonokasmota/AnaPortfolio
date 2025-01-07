@@ -55,7 +55,6 @@ function Ana() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

@@ -26,7 +26,6 @@ function LandingPage() {
       <div ref={ref}>
         <PinterestBoard />
       </div>
-      <Footer />
     </>
   );
 }

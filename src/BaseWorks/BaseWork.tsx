@@ -65,7 +65,6 @@ const BaseWork: React.FC<BaseWorkProps> = ({ Title, Text1, Text2, Text3, Image1,
         </div>
       </div>
     </div>
-    <Footer />
     </>
   );
 };

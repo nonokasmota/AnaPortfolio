@@ -247,7 +247,6 @@ function Voof() {
       </div>
     </div>
 
-    <Footer />
     </>
   );
 }
