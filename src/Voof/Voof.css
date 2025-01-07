@@ -316,3 +316,20 @@ p {
     transform: translate(55px, -22px) !important;
   }
 }
+
+@media (min-width: 1440px) {
+  .BodyVoof {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow: visible;
+    box-sizing: border-box;
+  }
+  .Back {
+    left: calc(100vw/2 - 1440px/2 + 10px) !important;
+  }
+}
