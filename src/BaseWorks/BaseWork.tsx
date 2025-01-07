@@ -35,7 +35,7 @@ const BaseWork: React.FC<BaseWorkProps> = ({ Title, Text1, Text2, Text3, Image1,
           <h1>{Title}</h1>
           <div className='MainHolder'>
             <div className="FirstText">
-              <p>{Text1}</p>
+                <p dangerouslySetInnerHTML={{ __html: Text1.replace(/\n/g, '<br />') }}></p>
               <p>{Text2}</p>
               <p>{Text3}</p>
             </div>

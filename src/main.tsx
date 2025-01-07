@@ -88,7 +88,7 @@ const App = () => {
           element={
             <BaseWork
               Title="Conflict of Interest"
-              Text1="Foldable pamphlet Informative pamphlet about Jan Van Toorn’s ’Design and Reflexivity’ manifesto. </br> This manifesto revolves around designer's conflict of interest between serving the public interest (doing things for the general good) and following private interests of clients and media. </br> This pamphlet serves as a warning about the ethical dilemmas outlined in Jan Van Toorn’s manifesto. It reminds designers of the inherent conflict of interests of their job."
+              Text1="Foldable pamphlet Informative pamphlet about Jan Van Toorn’s ’Design and Reflexivity’ manifesto. <br> This manifesto revolves around designer's conflict of interest between serving the public interest (doing things for the general good) and following private interests of clients and media. <br> This pamphlet serves as a warning about the ethical dilemmas outlined in Jan Van Toorn’s manifesto. It reminds designers of the inherent conflict of interests of their job."
               Text2="This magazine explores the use of grids in graphic design by juxtaposing the work of two iconic designers: Josef Müller-Brockmann and Rosmarie Tissi."
               Text3="Their contrasting approaches to grid-based design highlight the diversity and versatility of this foundational technique."
               Image1="GraphicDesign\Conflict\Conflict-1.png"
