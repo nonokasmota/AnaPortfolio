@@ -152,6 +152,6 @@ p {
 
 @media (min-width: 1440px) {
   .Back {
-    left: calc(100vw/2 - 1440px/2 + 10px) !important;
+    left: calc(100vw/2 - 1440px/2 + 7px) !important;
   }
 }
