@@ -198,9 +198,6 @@ function PinterestBoard() {
           {visibleUI && <div className='boxes'>
             <img src="assets/UI/AvatarThumb.png" alt="Avatar Generator" />
           </div>}
-          {visiblePH && <div className='boxes'>
-            <img src="assets/PH/CasaThumb.png" alt="House" />
-          </div>}
           {visibleGD && <div className='boxes'>
             <img src="assets/GD/SquaresThumb.png" alt="Squares" />
           </div>}
