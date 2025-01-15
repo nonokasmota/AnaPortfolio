@@ -23,9 +23,7 @@ const BaseWork: React.FC<BaseWorkProps> = ({ Title, Text1, Text2, Text3, Image1,
   return (
     <>
     <div className='Back'>
-      <a href='/AnaPortfolio/'>
-      <img src="arrowtop.svg" className='BackIcon' alt="back" />
-      </a>
+      <img src="arrowtop.svg" onClick={() => window.history.back()} className='BackIcon' alt="back" />
     </div>
     <div className="BodyTemplate">
       <div className="SmallerSection">

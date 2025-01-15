@@ -25,7 +25,7 @@ function Voof() {
   return (
     <>
     <div className='Back'>
-      <a href='/AnaPortfolio/'>
+      <a href="#" onClick={() => window.history.back()}>
       <img src="arrowtop.svg" className='BackIcon' alt="" />
       </a>
     </div>

@@ -113,6 +113,28 @@ button:focus-visible {
 }
 
 
+.clicked#REV{
+  background-color: var(--white) !important;
+  color: var(--black) !important;
+  border-color: var(--transparent-grey) !important;
+}
+
+.unclicked:hover#REV {
+  background-color: var(--transparent-grey) !important;
+  color: var(--black) !important;
+  border-color: var(--transparent-grey) !important;
+}
+.clicked:hover#REV {
+  background-color: var(--transparent-grey) !important;
+  color: var(--black) !important;
+  border-color: var(--transparent-grey) !important;
+}
+.unclicked#REV{
+  background-color: var(--white) !important;
+  color: var(--black) !important;
+  border-color: var(--transparent-grey) !important;
+}
+
 .clicked#ALL{
   background-color: var(--white) !important;
   color: var(--black) !important;
@@ -129,6 +151,12 @@ button:focus-visible {
   color: var(--black) !important;
   border-color: var(--transparent-grey) !important;
 }
+.unclicked#ALL{
+  background-color: var(--white) !important;
+  color: var(--black) !important;
+  border-color: var(--transparent-grey) !important;
+}
+
 button:focus,
 button:focus-visible {
   outline: none;
@@ -175,4 +203,9 @@ h3 {
   padding: 0 0; /* Add padding for smaller screens */
 }
 
+@media (min-width: 480px) {
+  #REV{
+    margin-left: 25px;
+  }
+}
 

@@ -41,9 +41,4 @@
   }
 }
 
-@media (min-width: 1440px) {
-  .Plus{
-    right: calc(100vw/2 - 1440px/2 - 7px) !important;
-  }
-  
-}
+

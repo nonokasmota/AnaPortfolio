@@ -5,7 +5,7 @@ function Ana() {
   return (
     <>
       <div id="anawrapper">
-        <a href='/AnaPortfolio/' className="Back">
+        <a onClick={() => window.history.back()} className="Back">
           <img src="arrowbottom.svg" alt=""/>
         </a>
         <div className="BodyAna">
