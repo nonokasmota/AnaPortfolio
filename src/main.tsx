@@ -9,6 +9,7 @@ import Voof from './Voof/Voof.tsx';
 import Ana from './Ana/Ana.tsx';
 import BaseWork from './BaseWorks/BaseWork.tsx';
 import Footer from './Footer/Footer.tsx';
+import NotFound from './NotFound.tsx';
 
 const App = () => {
   const location = useLocation();
@@ -48,6 +49,7 @@ const App = () => {
           <Route path="/AnaPortfolio/PinterestBoard" element={<PinterestBoard />} />
           <Route path="/AnaPortfolio/Voof" element={<Voof />} />
           <Route path="/AnaPortfolio/Ana" element={<Ana />} />
+          <Route path="*" element={<NotFound />} /> {/* Catch-all route for 404 */}
           <Route
             path="/AnaPortfolio/Antagonico"
             element={
