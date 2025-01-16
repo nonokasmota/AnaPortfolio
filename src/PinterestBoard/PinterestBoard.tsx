@@ -105,7 +105,7 @@ function PinterestBoard() {
             <img src="assets/GD/OpenThumb.png" alt="Open Source folder" />
           </div>}
           {visibleUI && <div className='boxes'>
-            <Link to="/AnaPortfolio/Voof">
+            <Link to="/Voof">
               <img src="assets/UI/VoofThumb.png" alt="Voof" />
               <div className="tags">
                 <p className="tag">&nbsp;Case Study&nbsp;</p>
@@ -120,7 +120,7 @@ function PinterestBoard() {
             <img src="assets/UI/GatherThumb.png" alt="Gather" />
           </div>}
           {visibleGD && <div className='boxes'>
-            <Link to="/AnaPortfolio/Conflict">
+            <Link to="/Conflict">
               <img src="assets/GD/ConflictThumb.png" alt="Comflict of Interests" />
               <div className="tags">
                 <p className="tag">↗</p>
@@ -143,7 +143,7 @@ function PinterestBoard() {
             <img src="assets/GD/RewireThumb.png" alt="Rewire" />
           </div>}
           {visibleGD && <div className='boxes'>
-            <Link to="/AnaPortfolio/Rupture"> 
+            <Link to="/Rupture"> 
               <img src="assets/GD/RuptureThumb.png" alt="Rupture Magazine" />
               <div className="tags">
                 <p className="tag">↗</p>
@@ -152,7 +152,7 @@ function PinterestBoard() {
           </div>}
           {visibleGD && (
             <div className='boxes'>
-              <Link to="/AnaPortfolio/Antagonico"> 
+              <Link to="/Antagonico"> 
                 <img src="assets/GD/AntagonicoThumb.png" alt="Antagónico" />
                 <div className="tags">
                 <p className="tag">↗</p>

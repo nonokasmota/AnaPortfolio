@@ -4,7 +4,7 @@ function Plus() {
   return (
     <>
       <div>
-      <Link to="/AnaPortfolio/Ana">
+      <Link to="/Ana">
         <img src="plus.svg" alt="+" className="Plus"/>
       </Link>
 
