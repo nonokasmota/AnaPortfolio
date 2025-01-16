@@ -4,7 +4,7 @@ import './index.css';
 import Plus from './Plus/Plus.tsx';
 import LandingPage from './LandingPage/LandingPage.tsx';
 import PinterestBoard from './PinterestBoard/PinterestBoard.tsx';
-import { HashRouter, Routes, Route, useLocation, BrowserRouter } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation} from 'react-router-dom';
 import Voof from './Voof/Voof.tsx';
 import Ana from './Ana/Ana.tsx';
 import BaseWork from './BaseWorks/BaseWork.tsx';
