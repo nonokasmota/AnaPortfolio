@@ -339,7 +339,7 @@ p {
   }
 }
 
-@media (max-width:1440px) {
+@media (min-width:1440px) {
   #Ref1, #Ref, #Ref2 {
     position: sticky !important;
     top: 25px !important;

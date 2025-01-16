@@ -120,12 +120,12 @@ button:focus-visible {
 }
 
 .unclicked:hover#REV {
-  background-color: var(--transparent-grey) !important;
+  background-color: var(--grey-lighter) !important;
   color: var(--black) !important;
   border-color: var(--transparent-grey) !important;
 }
 .clicked:hover#REV {
-  background-color: var(--transparent-grey) !important;
+  background-color: var(--grey-lighter) !important;
   color: var(--black) !important;
   border-color: var(--transparent-grey) !important;
 }
@@ -142,12 +142,12 @@ button:focus-visible {
 }
 
 .unclicked:hover#ALL {
-  background-color: var(--transparent-grey) !important;
+  background-color: var(--grey-lighter) !important;
   color: var(--black) !important;
   border-color: var(--transparent-grey) !important;
 }
 .clicked:hover#ALL {
-  background-color: var(--transparent-grey) !important;
+  background-color: var(--grey-lighter) !important;
   color: var(--black) !important;
   border-color: var(--transparent-grey) !important;
 }

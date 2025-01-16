@@ -1,16 +1,55 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <script>
-    // Redirect to the main app while preserving the path
-    const path = window.location.pathname;
-    const redirectUrl = `/AnaPortfolio/index.html${path}`;
-    window.location.replace(redirectUrl);
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+  <meta http-equiv="refresh" content="0; url=https://nonokasmota.github.io/AnaPortfolio" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: var(--white);
+      color: var(--black);
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 5rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+
+    a {
+      color: var(--grey-light);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-
 <body>
+  <div class="container">
+    <h1>404</h1>
+    <p>Redirecting you to the homepage...</p>
+    <p>If you are not redirected, click <a href="https://nonokasmota.github.io/AnaPortfolio">here</a>.</p>
+    <p>Ahem... 😅 This is my first time using react, so please be patient. If you know how to fix this issue please let me know! ✨</p>
+  </div>
 </body>
-
 </html>
