@@ -333,7 +333,7 @@ p {
 }
 @media (min-width: 480px) {
   #Ref1, #Ref, #Ref2 {
-    position: sticky!important;
+    position: sticky !important;
     top: 80px;
     z-index: 10;
   }
@@ -341,8 +341,8 @@ p {
 
 @media (max-width:1440px) {
   #Ref1, #Ref, #Ref2 {
-    position: sticky!important;
-    top: 25px;
+    position: sticky !important;
+    top: 25px !important;
     z-index: 10;
   }
   
