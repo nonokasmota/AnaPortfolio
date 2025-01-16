@@ -214,6 +214,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: flex-end; /* Align items to the right */
+  overflow: visible;
 }
 
 .SmallerSection {
@@ -329,4 +330,13 @@ p {
     overflow: visible;
     box-sizing: border-box;
   }
+}
+@media (min-width: 480px) {
+  #Ref1, #Ref, #Ref2 {
+    position: sticky!important;
+    top: 80px;
+    z-index: 10;
+  }
+
+  
 }

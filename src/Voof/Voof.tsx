@@ -1,24 +1,35 @@
 import './Voof.css';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 function Voof() {
   const [isVisibleResearch, setIsVisibleResearch] = useState(true);
   const [isVisibleDesign, setIsVisibleDesign] = useState(true);
   const [isVisibleFinalProject, setIsVisibleFinalProject] = useState(true);
+  const refResearch = useRef(null);
+  const refDesign = useRef(null);
+  const refFinalProject = useRef(null);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const scrollToComponent = (ref: any) => {
+    window.scrollTo({
+      top: ref.current.offsetTop - 125, 
+      behavior: "smooth"
+    });
+  };
 
   const toggleResearch = () => {
     setIsVisibleResearch(!isVisibleResearch);
+    scrollToComponent(refResearch);
   }
   const toggleDesign = () => {
     setIsVisibleDesign(!isVisibleDesign);
+    scrollToComponent(refDesign);
   }
   const toggleFinalProject = () => {
     setIsVisibleFinalProject(!isVisibleFinalProject);
-    
+    scrollToComponent(refFinalProject);
   }
   
   
@@ -68,10 +79,10 @@ function Voof() {
       </div>
 
       <div className='BiggerSection'>
-        <div onClick={toggleResearch} className={`Hide ${isVisibleResearch ? '' : 'Rotated'}`}><img src="openclose.svg" alt=""/></div>
-        
+          <div id="Ref" onClick={toggleResearch} className={`Hide ${isVisibleResearch ? '' : 'Rotated'}`}><img src="openclose.svg" alt=""/></div>
+
         <div className="SmallerSection">
-          <h1>Research</h1>
+          <h1 ref={refResearch}>Research</h1>
           {isVisibleResearch && (
           <div className="MainResearch">
             <div className="ResearchText">
@@ -112,10 +123,9 @@ function Voof() {
       </div>
 
       <div className='BiggerSection'>
-      
-        <div onClick={toggleDesign} className={`Hide ${isVisibleDesign ? '' : 'Rotated'}`}><img src="openclose.svg" alt=""/></div>
+        <div id="Ref1" onClick={toggleDesign} className={`Hide ${isVisibleDesign ? '' : 'Rotated'}`}><img src="openclose.svg" alt=""/></div>
         <div className="SmallerSection">
-          <h1>Design</h1>
+          <h1 ref={refDesign}>Design</h1>
           {isVisibleDesign && (
             <div className="Design">
               <h2>Interaction Flow:</h2>
@@ -219,17 +229,17 @@ function Voof() {
       </div>
 
       <div className='BiggerSection'>
-        <div onClick={toggleFinalProject} className={`Hide ${isVisibleFinalProject ? '' : 'Rotated'}`}><img src="openclose.svg" alt=""/></div>
+          <div id="Ref2" onClick={toggleFinalProject} className={`Hide ${isVisibleFinalProject ? '' : 'Rotated'}`}><img src="openclose.svg" alt=""/></div>
         <div className="SmallerSection">
-          <h1>Final Project</h1>
+          <h1 ref={refFinalProject}>Final Project</h1>
           {isVisibleFinalProject && (
             <div className="FinalProject">
-              <h3>Voof UI:</h3>
+              <h2>Voof UI:</h2>
               <img src="Voof/Image24.png" alt="" className="ImageBig" />
-              <h3>App UI:</h3>
+              <h2>App UI:</h2>
               <img src="Voof/Image25.png" alt="" className="ImageBig" />
               <div className='WhatText'>
-                <h3>What I learned</h3>
+                <h2>What I learned</h2>
                 <div>
                   <p>This was my first experience with an interaction design project, and it gave me valuable insight into the process of creating and designing a product with a specific audience in mind. I learned how to benchmark against competitors and work toward finding the best solution for a given problem. Additionally, this was my first time participating in a long-term team project with such an extensive scope. As a result, I improved my time management skills and, having taken on a leadership role, learned to better assess which tasks are best suited to each team member and how to effectively manage a team overall.</p>
                 </div>
