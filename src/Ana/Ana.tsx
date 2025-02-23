@@ -10,7 +10,7 @@ function Ana() {
         </a>
         <div className="BodyAna">
           <div className="Text">
-            <h3>My name <br />is <span className="italic">Ana Mota</span></h3>
+            <h3>My name <br />is Ana Mota</h3>
             <p>I am currently finishing my Communication Design degree at FBAUL. I have always had a strong interest in Graphic Design and UX/UI Design.</p><p> Additionally, I've been fascinated by cartoon drawing, and this playful aspect often shines through in my design projects.</p><p>I am a very versatile designer: the ability to adapt my work to what is required is one of my best qualities as a designer.</p>
             <div className="Socials">
             <a href='https://www.behance.net/nm230' target="_blank" className="FooterSvg">
