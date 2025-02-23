@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import './Landing.css';
-import DraggableImage from './DragabbleImage';
+// import DraggableImage from './DragabbleImage';
 import PinterestBoard from '../PinterestBoard/PinterestBoard';
 
 
@@ -17,7 +17,7 @@ function LandingPage() {
 
   return (
     <>
-      <DraggableImage />
+      {/* <DraggableImage /> */}
       <div className='LandingDiv'>
         <div className="LandingTitleDiv">
           <h1 className='TitleLanding'>Ana Mota</h1>
