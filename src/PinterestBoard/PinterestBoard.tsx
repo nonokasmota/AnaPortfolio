@@ -85,7 +85,7 @@ function PinterestBoard() {
             <button id="UI" onClick={toggleVisibilityUI} className={visibleUI ? 'clicked': 'unclicked'}>UI/UX</button>
             <button id="IL" onClick={toggleVisibilityIL} className={visibleIL ? 'clicked': 'unclicked'}>Illustration</button>
             <button id="PH" onClick={toggleVisibilityPH} className={visiblePH ? 'clicked': 'unclicked'}>Photography</button>
-            <button id="REV" onClick={toggleVisibilityREV} className={visibleREV ? 'clicked': 'unclicked'}>Inverse</button>
+            <button id="REV" onClick={toggleVisibilityREV} className={visibleREV ? 'clicked': 'unclicked'}>Invert</button>
             <button id="ALL" onClick={toggleVisibilityALL} className={visibleALL ? 'clicked': 'unclicked'}>All</button>
         </div>
 
