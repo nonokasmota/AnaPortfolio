@@ -21,7 +21,7 @@ function LandingPage() {
       <div className='LandingDiv'>
         <div className="LandingTitleDiv">
           <h1 className='TitleLanding'>Ana Mota</h1>
-          <h2>is a Product Designer, Problem Solver and a Cartoon Lover.</h2>
+          <h2>is a Designer, Problem Solver and Cartoon Lover.</h2>
         </div>
         <button onClick={() => scrollToComponent(ref)} id='scrollButton'>my work ↘</button>
       </div>
